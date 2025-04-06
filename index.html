@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto - DBZ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Secular+One&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/CSS/reset.css">
+    <link rel="stylesheet" href="./src/CSS/style.css">
+    <link rel="stylesheet" href="./src/CSS/responsivo.css">
+
+</head>
+
+<body>
+    <main class="personagens">
+        <div id="mario" class="personagem selecionado">
+            <picture>
+                <source srcset="./src/imagens/bg-codemario.png" media="(min-width: 768px)" />
+                <img class="imagem" src="./src/imagens/bg-codemario-mobile.png" alt="Personagem Codemario" />
+            </picture>
+            <div class="conteudo">
+                <h2 class="nome-personagem">Codemario</h2>
+                <p class="descricao">Codemario Bros, conhecido no submundo dos tubos como "Codemario", é um programador
+                    prodígio especializado em engenharia de dados. Com um intelecto avançado ele foi pioneiro em usar tecnologia para resolver problemas dos seu clientes de sua empresa de serviços hidráulicos "Brother & Bros".</p>
+            </div>
+        </div>
+
+        <div id="luigi" class="personagem">
+            <picture>
+                <source srcset="./src/imagens/bg-codeluigi.png" media="(min-width: 768px)" />
+                <img class="imagem" src="./src/imagens/bg-codeluigi-mobile.png" alt="Personagem Codeluigi" />
+            </picture>
+            <div class="conteudo">
+                <h2 class="nome-personagem">Codeluigi</h2>
+                <p class="descricao">Lio Nakamura, conhecido como "Codeluigi", é uma programador genial que domina o
+                    desenvolvimento de algoritmos e inteligência artificial. Com um talento nato para decifrar padrões,
+                    ele cria sistemas inovadores e protege dados sensíveis de ameaças digitais.</p>
+            </div>
+        </div>
+
+        <div id="peach" class="personagem">
+            <picture>
+                <source srcset="./src/imagens/bg-codepeach.png" media="(min-width: 768px)" />
+                <img class="imagem" src="./src/imagens/bg-codepeach-mobile.png" alt="Personagem Codepeach" />
+            </picture>
+            <div class="conteudo">
+                <h2 class="nome-personagem">Codepeach</h2>
+                <p class="descricao">Mayumi Tanaka, conhecida como "Codepeach", é uma hacker habilidosa que opera nas sombras
+                    do ciberespaço. Mestra em engenharia reversa e criptografia, ela combina agilidade e inteligência
+                    afiada para quebrar firewalls impenetráveis.</p>
+            </div>
+        </div>
+        <div id="toad" class="personagem">
+            <picture>
+                <source srcset="./src/imagens/bg-codetoad.png" media="(min-width: 768px)" />
+                <img class="imagem" src="./src/imagens/bg-codetoad-mobile.png" alt="Personagem Codetoad" />
+            </picture>
+            <div class="conteudo">
+                <h2 class="nome-personagem">Codetoad</h2>
+                <p class="descricao">Cogu, conhecido como "Codetoad", é um prodígio da programação
+                    espacial. Criado em uma estação orbital, ele domina linguagens de código como se fossem sua segunda
+                    língua. Especialista em inteligência artificial e segurança cibernética.</p>
+            </div>
+        </div>
+
+        <div id="yoshi" class="personagem">
+            <picture>
+                <source srcset="./src/imagens/bg-codeyoshi.png" media="(min-width: 768px)" />
+                <img class="imagem" src="./src/imagens/bg-codeyoshi-mobile.png" alt="Personagem Codeyoshi" />
+            </picture>
+            <div class="conteudo">
+                <h2 class="nome-personagem">Codeyoshi</h2>
+                <p class="descricao">No coração de uma estação espacial abandonada, Orion Vex, um ex-engenheiro
+                    cibernético, busca desvendar um código perdido há séculos. Dizem que esse código guarda o segredo
+                    para uma tecnologia ancestral capaz de redefinir a inteligência artificial.</p>
+            </div>
+        </div>
+
+
+    </main>
+    <ul class="botoes">
+        <li>
+            <button onclick="mostrarImagemMario()" id="botaoDoCodemario" class="botao codemario selecionado">
+                <img src="./src/imagens/icone-codemario.png" alt="Ícone Codemario" />
+            </button>
+        </li>
+        <li>
+            <button onclick="mostrarImagemLuigi()" id="botaoDoCodeluigi" class="botao codeluigi">
+                <img src="./src/imagens/icone-codeluigi.png" alt="Ícone Codeluigi" />
+            </button>
+        </li>
+        <li>
+            <button onclick="mostrarImagemPeach()" id="botaoDaCodepeach" class="botao codepeach">
+                <img src="./src/imagens/icone-codepeach.png" alt="Ícone Codepeach" />
+            </button>
+        </li>
+        <li>
+            <button onclick="mostrarImagemToad()" id="botaoDoCodetoad" class="botao codetoad">
+                <img src="./src/imagens/icone-codetoad.png" alt="Ícone Codetoad" />
+            </button>
+        </li>
+        <li>
+            <button onclick="mostrarImagemYoshi()" id="botaoDoCodeyoshi" class="botao codeyoshi">
+                <img src="./src/imagens/icone-codeyoshi.png" alt="Ícone Codeyoshi" />
+            </button>
+        </li>
+    </ul>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
