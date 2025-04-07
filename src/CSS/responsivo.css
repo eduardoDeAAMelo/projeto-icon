@@ -34,7 +34,7 @@
         flex-direction: row;
         align-items: flex-end;
         width: 100%;
-        height: auto%;
+        height: auto;
         padding: 20px;
     }
 
@@ -55,7 +55,7 @@
     }
 
     .conteudo{
-        top: 70%;
+        top: 55%;
     }
 
     .botoes{
